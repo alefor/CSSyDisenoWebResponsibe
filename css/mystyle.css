@@ -113,6 +113,69 @@ img#imgPrincipal {
     -webkit-justify-content: space-around;
     -webkit-align-items: flex-start;
 }
+#social{
+}
+ul>li{
+    text-decoration: none;
+
+}
+/********************************************************************************************/
+.paisajes {
+    margin: 0;
+    background: #d5c75f;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: space-around;
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+    -webkit-align-items: center;
+}
+.paisajes>div {
+    margin-bottom: 15px
+}
+
+.paisajes>div>img {
+    flex: 1 1;
+    -webkit-flex:0 0;
+    border: 1px black solid;
+    width: 250px;
+}
+.paisajes>div:first-child>img {
+    filter: blur(10px);
+}
+.paisajes>div:nth-child(3)>img {
+    filter: sepia(90%);
+}
+.paisajes>div:nth-child(even)>img {
+    filter: grayscale(100%);
+}
+#imgP01 {
+    order: 1;
+    margin-top: 15px;
+}
+#imgP02 {
+    order: 2;
+    margin-top: 15px;
+}
+#imgP03 {
+    order: 3;
+    margin-top: 15px;
+}
+#imgP04 {
+    order: 4;
+}
+#imgP05 {
+    order: 5;
+}
+#imgP06 {
+    order: 6;
+}
+/********************************************************************************************/
+
+
 /*Aplicando Estilos Responsive*/
 @media (max-width: 899px) {
 
@@ -120,11 +183,9 @@ img#imgPrincipal {
         margin: 0px;
         width: 100%;
     }
-
     nav {
         float: none;
     }
-
     #imgPrincipal {
         width: 100%;
     }
@@ -133,6 +194,53 @@ img#imgPrincipal {
     }
     #imgIzq{
         width: 100%;
+    }
+    .section-secundaria{
+        flex-direction: column;
+        -webkit-flex-direction: column;
+    }
+    .pie-de-pagina{
+        flex-direction: column;
+        -webkit-flex-direction: column;
+    }
+    .pie-de-pagina>div{
+        width: 100%;
+        max-width: 320px;
+        height: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /******* Paisajes responsive *******/
+
+    .paisajes {
+        flex-direction: column;
+        -webkit-flex-direction: column;
+    }
+    .paisajes>div {
+        width: 100%;
+    }
+    #imgP02 {
+        margin-top: 0px;
+    }
+    #imgP03 {
+        margin-top: 0px;
+    }
+    #imgP04 {
+        margin-bottom: 15px;
+    }
+    #imgP05 {
+        margin-bottom: 15px;
+    }
+    #imgP06 {
+        margin-bottom: 15px;
+    }
+
+    .paisajes>div>img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 150px;
     }
 }
 
