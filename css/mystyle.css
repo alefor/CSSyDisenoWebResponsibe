@@ -1,10 +1,10 @@
-/**********************************CUERPO**********************************************************/
+/********************************************************************************************/
 body {
     font-family: 'Dancing Script', cursive;
     background-color: #02010a;
 }
 
-/**********************************Clase Contenido**********************************************************/
+/*******************************************************************************************/
 .contenido {
     width: 900px;
     margin-right: auto;
@@ -118,7 +118,6 @@ ul>li{
     list-style: none;
     text-decoration: none;
 }
-
 /********************************************************************************************/
 .paisajes {
     margin: 0;
@@ -291,12 +290,44 @@ ul>li{
     #imgP06 {
         margin-bottom: 15px;
     }
-
+    /******* Retratos responsive *******/
     .paisajes>div>img {
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: 150px;
     }
+    .retratos {
+        flex-direction: column;
+        -webkit-flex-direction: column;
+    }
+
+    .retratos>div {
+        width: 100%;
+    }
+
+    #imgR02 {
+        margin-top: 0px
+    }
+    #imgR03 {
+        margin-top: 0px
+    }
+    #imgR04 {
+        margin-bottom: 15px;
+    }
+    #imgR05 {
+        margin-bottom: 15px;
+    }
+    #imgR06 {
+        margin-bottom: 15px;
+    }
+
+    .retratos>div>img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 150px;
+    }
+
 }
 
